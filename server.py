@@ -1,5 +1,3 @@
-##!/Desktop/PiConnect python 
-
 """ 
 A server that receives commands from the client and uses them to call 
 functions dynamically. 

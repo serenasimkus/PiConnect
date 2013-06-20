@@ -1,7 +1,7 @@
-import colors
+import pics
 import lights
 
 def connect():
-    Apps = [["colors"],["lights"]]
+    Apps = [["pics"],["lights"]]
     
     return Apps

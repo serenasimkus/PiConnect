@@ -8,8 +8,8 @@ def functions():
     
 def on():
     subprocess.call([os.path.dirname(os.path.abspath(sys.argv[0]))+ "/" + "light.sh", "1"])
-    return "Gabe sucks"
+    return "Ready for input: "
     
 def off():
     subprocess.call([os.path.dirname(os.path.abspath(sys.argv[0]))+ "/" + "light.sh", "0"])
-    return "Gabe sucks a lot"
+    return "Ready for input: "
