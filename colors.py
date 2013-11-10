@@ -1,7 +1,4 @@
 import backgrounds as b
-#import green as g
-#import threading
-#import app
 
 def functions():
     func = [["blue"],["green"],["orange"]]
@@ -9,12 +6,13 @@ def functions():
     return func
     
 def blue():
-    b.cat()
+    b.pic('cat.jpg')
     return "Gabe sucks"
     
 def green():
-    #threading.Thread(target=g.main())
+    b.pic('puppy.jpg')
     return "Gabe is mean"
     
 def orange():
+    b.pic('fox.jpg')
     return "Gabe can sometimes maybe be nice"

@@ -11,7 +11,7 @@ import threading
 import connect as c
 
 host = ''
-port = 5555
+port = 9999
 backlog = 10
 size = 1024
 
@@ -24,9 +24,6 @@ def options(app, resp):
     threading.Thread(target=call(respC, app))
 
 def apps(data):
-
-    print(data)
-
     if cmp(data, "connect") == 0:
         client.send(json.dumps(c.connect()))
 
