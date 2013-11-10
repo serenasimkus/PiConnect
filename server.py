@@ -11,7 +11,7 @@ import threading
 import connect as c
 
 host = ''
-port = 9999
+port = 9898
 backlog = 10
 size = 1024
 
@@ -44,6 +44,7 @@ def apps(data):
         options(app, resp)
 
 def call(func, mod):
+    print(func)
     a = getattr(mod, func)
     client.send(json.dumps(a()))
 
@@ -53,7 +54,6 @@ s.listen(backlog)
 
 while 1:
     client, address = s.accept()
-
     data = client.recv(size)
     data = data.rstrip("\n")
 

@@ -1,4 +1,5 @@
 import subprocess
+import sys, os
 
 def functions():
     func = [["on"],["off"]]
@@ -6,9 +7,9 @@ def functions():
     return func
     
 def on():
-    subprocess.call(["light.sh", "1"])
+    subprocess.call([os.path.dirname(os.path.abspath(sys.argv[0]))+ "/" + "light.sh", "1"])
     return "Gabe sucks"
     
 def off():
-    subprocess.call(["light.sh", "0"])
+    subprocess.call([os.path.dirname(os.path.abspath(sys.argv[0]))+ "/" + "light.sh", "0"])
     return "Gabe sucks a lot"
